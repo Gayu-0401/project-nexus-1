@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+*{
+    font-family: 'Jost', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4070f4;
+}
+.container{
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+.container header{
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+.container form{
+    margin-top: 20px;
+}
+form .field{
+    margin-bottom: 5px;
+}
+form .input-field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+}
+.input-field input{
+    height: 80%;
+    width: 100%;
+    outline: none;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+.invalid input{
+    border-color: #d93025;
+}
+.field .error{
+    display: flex;
+    align-items: center;
+    color: #d93025;
+    font-size: 13px;
+    display: none;
+}
+.invalid .error{
+    display: flex;
+}
+.error .error-icon{
+    margin-right: 6px;
+    font-size: 14px;
+}
+.input-field .fa-icon{
+    position: absolute;
+    right: 13px;
+    top: 42%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #919191;
+    cursor: pointer;
+    padding: 3px;
+}
+.create-password .error{
+    align-items: flex-start;
+}
+.create-password .error-icon{
+    margin-top: 4px;
+}
+.button{
+    margin: 15px 0 6px;
+}
+.button input{
+    color: #fff;
+    background: #4070f4;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input:hover{
+    background-color: #0e4bf1;
+}
+.form-link{
+    font-size: 14px;
+    padding: 5px 0;
+    font-weight: 300;
+    text-align: center;
+}
+.form-link a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #0e4bf1;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.form-link a:hover{
+    text-decoration: underline;
+    color: blue;
+    
+}
+.checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkbox-text .text{
+    font-size: 12.5px;
+    font-weight: 400;
+    color: #333;
+}
+.checkbox-text .checkbox-content,.checkbox-text .content{
+    display: flex;
+    align-items: center;
+}
+.checkbox-content input,.content input{
+    margin: 0 8px 0 4px;
+    accent-color: #4070f4;
+}
+.checkbox-text a.text{
+    text-decoration: none;
+    color: #0e4bf1;
+    transition: all 0.3s ease;
+}
+.content .item{
+    font-size: 14px;
+}
+.checkbox-text a.text:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 300px){
+    .form{
+        padding: 15px 10px;
+    }
+} 
